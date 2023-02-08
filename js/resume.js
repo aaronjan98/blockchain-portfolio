@@ -21,7 +21,12 @@ TxtRotate.prototype.tick = function () {
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 250 - Math.random() * 100;
+
+  // Check if the current string is "Blockchain Developer"
+  if (fullTxt === "Blockchain Developer") {
+    delta = 90;
+  }
 
   if (this.isDeleting) {
     delta /= 2;
