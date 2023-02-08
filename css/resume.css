@@ -184,7 +184,7 @@ p {
 /* HEADER */
 
 .header {
-  background-image: url("../img/Background.png");
+  background-image: url("../img/background/background_1.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -401,7 +401,7 @@ p {
 }
 
 .skills .skill-card {
-  background-image: url("../img/Background.png");
+  background-image: url("../img/background/background_0.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #060003;
