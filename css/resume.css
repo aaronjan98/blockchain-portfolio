@@ -6,9 +6,12 @@
 
 :root {
   --black: #060003;
+  --stratos: #010131;
   --gray: #242123;
   --white: #ffffff;
   --blue: #8e6eea;
+  --green: #143101;
+  --red: #310127;
   --border-gradient: linear-gradient(
     227.58deg,
     #f4492f -44.04%,
@@ -29,7 +32,7 @@ html {
 }
 
 body {
-  background-color: var(--black);
+  background-color: var(--stratos);
 }
 
 /* TYPOGRAPHY */
@@ -107,13 +110,13 @@ p {
 }
 
 .list-items-circle li a {
-  border: 2px solid var(--black);
+  border: 2px solid var(--white);
   border-radius: 50%;
 }
 
 .list-items-circle li a:hover {
-  background-color: var(--white);
-  border: 2px solid var(--white);
+  background-color: var(--green);
+  border: 2px solid var(--green);
 }
 
 .list-items-circle li a .fab {
@@ -197,16 +200,16 @@ p {
 .header .header-links,
 .contact .contact-links,
 .header h1 {
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 45px;
 }
 
 .header .flex-list {
-  color: var(--black);
+  color: var(--white);
 }
 
 .header .flex-list li a {
-  color: var(--black);
+  color: var(--white);
 }
 
 .header .flex-list li:hover,
@@ -215,7 +218,7 @@ p {
 }
 
 .header .flex-list hr {
-  border: 1px solid var(--black);
+  border: 1px solid var(--white);
 }
 
 /* === ABOUT === */
@@ -460,7 +463,7 @@ p {
 
 .contact .flex-list li:hover,
 .contact .flex-list li a:hover {
-  color: var(--blue);
+  color: var(--green);
 }
 
 /* === FOOTER === */

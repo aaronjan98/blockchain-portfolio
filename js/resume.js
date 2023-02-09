@@ -23,7 +23,6 @@ TxtRotate.prototype.tick = function () {
   var that = this;
   var delta = 250 - Math.random() * 100;
 
-  // Check if the current string is "Blockchain Developer"
   if (fullTxt === "Blockchain Developer") {
     delta = 90;
   }
@@ -55,9 +54,10 @@ window.onload = function () {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
+
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.15em solid #8e6eea }";
+  css.innerHTML =
+    ".txt-rotate > .wrap { border-right: 0.15em solid var(--blue) }";
   document.body.appendChild(css);
 };
