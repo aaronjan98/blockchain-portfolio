@@ -10,8 +10,8 @@
   --gray: #242123;
   --white: #ffffff;
   --blue: #8e6eea;
-  --green: #143101;
-  --red: #310127;
+  --green: #045a07;
+  --red: #bf3e39;
   --border-gradient: linear-gradient(
     227.58deg,
     #f4492f -44.04%,
@@ -133,7 +133,7 @@ p {
 }
 
 .list-items-circle li a:hover .fab {
-  color: var(--black);
+  color: var(--white);
 }
 
 .contact .list-items-circle li a {
@@ -322,8 +322,7 @@ p {
 
 .projects .card .card-buttons .card-button--site:hover,
 .projects .card .card-buttons .card-button--code:hover {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--green);
 }
 
 /* === EXPERIENCE === */
@@ -376,7 +375,7 @@ p {
 }
 
 .experience .experience-card .card-years {
-  color: var(--blue);
+  color: var(--red);
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
