@@ -212,7 +212,7 @@ p {
   color: var(--white);
 }
 
-.header .flex-list li a:hover {
+.header > ul.contact-details.flex-list > li > a:hover {
   opacity: 0.8;
 }
 
@@ -459,7 +459,7 @@ p {
   margin-bottom: 45px;
 }
 
-.contact .flex-list li a:hover {
+.contact > ul.contact-details.flex-list > li > a:hover {
   opacity: 0.8;
 }
 
