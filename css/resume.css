@@ -105,7 +105,7 @@ p {
   text-decoration: none;
   opacity: 1;
 
-  display: block;
+  display: flex;
   transition: 250ms ease all;
 }
 
@@ -212,9 +212,8 @@ p {
   color: var(--white);
 }
 
-.header .flex-list li:hover,
 .header .flex-list li a:hover {
-  color: var(--white);
+  opacity: 0.8;
 }
 
 .header .flex-list hr {
@@ -460,9 +459,14 @@ p {
   margin-bottom: 45px;
 }
 
-.contact .flex-list li:hover,
 .contact .flex-list li a:hover {
-  color: var(--green);
+  opacity: 0.8;
+}
+
+a .resume-link {
+  margin-left: 8px;
+  opacity: 1;
+  transition: 250ms ease all;
 }
 
 /* === FOOTER === */
