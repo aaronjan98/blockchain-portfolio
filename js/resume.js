@@ -58,6 +58,6 @@ window.onload = function () {
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML =
-    ".txt-rotate > .wrap { border-right: 0.15em solid var(--blue) }";
+    ".txt-rotate > .wrap { border-right: 0.15em solid var(--red) }";
   document.body.appendChild(css);
 };
