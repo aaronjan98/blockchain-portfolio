@@ -1,5 +1,11 @@
 [[redirects]]
-  from = "https://resume.aaronjanovitch.com"
-  to = "https://aaronjanovitch.com/Aaron-Janovitch-Resume.pdf"
+  from = "https://resume.aaronjanovitch.com/*"
+  to = "/netlify/functions/redirect.js"
   status = 200
-  headers.Content-Disposition = "inline; filename=Aaron-Janovitch-Resume.pdf"
+  force = true
+
+[[headers]]
+  for = "/netlify/functions/redirect.js"
+  [headers.values]
+    Content-Disposition = "inline; filename=Aaron-Janovitch-Resume.pdf"
+
