@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: aaronjanovitch.com
+Token: ad5d9b7d9a4962938f934bf0437b10f32d3b8c7a710d97f83ab7a9dfd7635169
