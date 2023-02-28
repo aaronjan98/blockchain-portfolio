@@ -114,6 +114,7 @@ p {
 
 .list-items-circle li a {
   border: 2px solid var(--white);
+  background-color: var(--stratos);
   border-radius: 50%;
 }
 
