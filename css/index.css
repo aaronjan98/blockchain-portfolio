@@ -336,10 +336,14 @@ p {
 
 /* === EXPERIENCE === */
 
-.experience-description {
-  max-width: 900px;
+.experience-container {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 125px;
+}
 
+.experience-description {
+  max-width: 1000px;
   font-weight: 400;
   font-size: var(--font-32);
   line-height: 150%;
@@ -348,12 +352,13 @@ p {
   position: relative;
 }
 
-.experience-description img {
-  position: absolute;
-  top: 50%;
-  right: -200px;
-  transform: translate(-50%, -50%);
-
+@media (max-width: 750px) {
+  .experience-container img {
+    display: none;
+  }
+}
+.experience-container img {
+  padding-left: 30px;
   pointer-events: none;
 }
 
