@@ -447,9 +447,13 @@ p {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1435px) {
+  .skills .skill-list li {
+    min-width: 304px;
+  }
+}
 .skills .skill-list li {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
