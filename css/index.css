@@ -22,6 +22,8 @@
   --font-96: clamp(56px, 8vw, 96px);
   --font-40: clamp(24px, 6vw, 40px);
   --font-32: clamp(24px, 4vw, 32px);
+
+  --h1-line-height: 116px;
 }
 
 html {
@@ -40,7 +42,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-96);
-  line-height: 116px;
+  line-height: var(--h1-line-height);
 }
 
 h2 {
@@ -164,7 +166,8 @@ p {
   position: relative;
 }
 
-.profile-container .profile {
+.profile-container img.profile {
+  background: var(--stratos);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -173,6 +176,11 @@ p {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+.profile-container img.profile:hover {
+  background-color: var(--green);
+  transition: 250ms ease all;
 }
 
 .profile-container .ring {
@@ -538,10 +546,8 @@ a .resume-link {
 
 .txt-rotate > .wrap::after {
   content: "|";
-  color: transparent;
+  color: var(--red);
   display: inline-block;
-  width: 0;
-  border-right: 0.15em solid var(--red);
   animation: blink 1s infinite;
   position: absolute;
   margin-left: 5px;
