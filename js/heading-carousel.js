@@ -18,13 +18,20 @@ TxtRotate.prototype.tick = function () {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+  this.el.innerHTML =
+    '<span class="wrap' +
+    (this.isDeleting ? "" : " typing") +
+    '">' +
+    this.txt +
+    "</span>";
 
   var that = this;
-  var delta = 250 - Math.random() * 100;
+  var delta = 100 - Math.random() * 40;
 
   if (fullTxt === "Blockchain Developer") {
-    delta = 90;
+    delta = 100;
+  } else {
+    delta = 120;
   }
 
   if (this.isDeleting) {
@@ -58,6 +65,6 @@ window.onload = function () {
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML =
-    ".txt-rotate > .wrap { border-right: 0.15em solid var(--red) }";
+    "@keyframes blink { 50% { opacity: 0; border-color: transparent; } }";
   document.body.appendChild(css);
 };

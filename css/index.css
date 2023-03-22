@@ -528,3 +528,32 @@ a .resume-link {
     padding: 40px;
   }
 }
+
+/* Heading Cursor */
+
+.txt-rotate > .wrap {
+  position: relative;
+  border-right: 0.15em solid transparent;
+}
+
+.txt-rotate > .wrap::after {
+  content: "|";
+  color: transparent;
+  display: inline-block;
+  width: 0;
+  border-right: 0.15em solid var(--red);
+  animation: blink 1s infinite;
+  position: absolute;
+  margin-left: 5px;
+  animation-play-state: paused;
+}
+
+.txt-rotate > .wrap.typing::after {
+  animation-play-state: running;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
